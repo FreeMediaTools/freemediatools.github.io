@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Tools - Free & Simple</title>
+  <meta name="description" content="Free social media tools like character counter, hashtag generator, and more. Easy and fast!">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Social Media Tools</h1>
+    <p>Free online tools to boost your social media posts!</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Character Counter -->
+    <section class="tool">
+      <h2>Character Counter</h2>
+      <textarea id="charText" placeholder="Type your text..."></textarea>
+      <p>Characters: <span id="charCount">0</span></p>
+      <button onclick="countChars()">Count Characters</button>
+    </section>
+
+    <!-- Hashtag Generator -->
+    <section class="tool">
+      <h2>Hashtag Generator</h2>
+      <input type="text" id="hashtagKeyword" placeholder="Enter a keyword">
+      <button onclick="generateHashtags()">Generate Hashtags</button>
+      <p id="hashtagsResult"></p>
+    </section>
+
+    <!-- Future Tool Placeholder -->
+    <section class="tool">
+      <h2>More Tools Coming Soon</h2>
+      <p>Stay tuned for Caption Generator, Emoji Adder, and more!</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Social Media Tools | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    function countChars() {
+      const text = document.getElementById('charText').value;
+      document.getElementById('charCount').innerText = text.length;
+    }
+
+    function generateHashtags() {
+      const keyword = document.getElementById('hashtagKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const hashtags = `#${keyword} #${keyword}Life #${keyword}Goals #${keyword}Vibes #${keyword}Lovers`;
+      document.getElementById('hashtagsResult').innerText = hashtags;
+    }
+  </script>
+</body>
+</html>
