@@ -32,10 +32,42 @@
       <p id="hashtagsResult"></p>
     </section>
 
+    <!-- Caption Generator -->
+    <section class="tool">
+      <h2>Instagram Caption Generator</h2>
+      <input type="text" id="captionKeyword" placeholder="Enter a keyword">
+      <button onclick="generateCaption()">Generate Caption</button>
+      <p id="captionResult"></p>
+    </section>
+
+    <!-- Bio Generator -->
+    <section class="tool">
+      <h2>Bio Generator</h2>
+      <input type="text" id="bioKeyword" placeholder="Enter a keyword">
+      <button onclick="generateBio()">Generate Bio</button>
+      <p id="bioResult"></p>
+    </section>
+
+    <!-- Emoji Suggestion Tool -->
+    <section class="tool">
+      <h2>Emoji Suggestion Tool</h2>
+      <input type="text" id="emojiKeyword" placeholder="Enter a keyword for emojis">
+      <button onclick="generateEmojis()">Generate Emojis</button>
+      <p id="emojiResult"></p>
+    </section>
+
+    <!-- Post Scheduler -->
+    <section class="tool">
+      <h2>Post Scheduler</h2>
+      <textarea id="schedulerText" placeholder="Enter your post details"></textarea>
+      <button onclick="generateSchedule()">Generate Post Schedule</button>
+      <p id="scheduleResult"></p>
+    </section>
+
     <!-- Future Tool Placeholder -->
     <section class="tool">
       <h2>More Tools Coming Soon</h2>
-      <p>Stay tuned for Caption Generator, Emoji Adder, and more!</p>
+      <p>Stay tuned for more features!</p>
     </section>
 
   </main>
@@ -45,16 +77,66 @@
   </footer>
 
   <script>
+    // Character Counter
     function countChars() {
       const text = document.getElementById('charText').value;
       document.getElementById('charCount').innerText = text.length;
     }
 
+    // Hashtag Generator
     function generateHashtags() {
       const keyword = document.getElementById('hashtagKeyword').value.trim();
       if (!keyword) return alert('Please enter a keyword');
       const hashtags = `#${keyword} #${keyword}Life #${keyword}Goals #${keyword}Vibes #${keyword}Lovers`;
       document.getElementById('hashtagsResult').innerText = hashtags;
+    }
+
+    // Instagram Caption Generator
+    function generateCaption() {
+      const keyword = document.getElementById('captionKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const captions = [
+        `Feeling #${keyword} today!`,
+        `Living my best #${keyword} life!`,
+        `Another day, another #${keyword} vibe.`,
+        `Just a little #${keyword} for your feed!`
+      ];
+      const randomCaption = captions[Math.floor(Math.random() * captions.length)];
+      document.getElementById('captionResult').innerText = randomCaption;
+    }
+
+    // Bio Generator
+    function generateBio() {
+      const keyword = document.getElementById('bioKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const bios = [
+        `I'm a proud ${keyword} lover!`,
+        `${keyword} enthusiast sharing my passion with the world.`,
+        `Living life with a big love for ${keyword}.`
+      ];
+      document.getElementById('bioResult').innerText = bios[Math.floor(Math.random() * bios.length)];
+    }
+
+    // Emoji Suggestion Tool
+    function generateEmojis() {
+      const keyword = document.getElementById('emojiKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const emojis = {
+        love: "❤️💖💕",
+        happy: "😊😁😂",
+        sad: "😢😭💔",
+        fun: "🎉🎊🎈"
+      };
+      const emojiResult = emojis[keyword.toLowerCase()] || "No emojis found for this keyword!";
+      document.getElementById('emojiResult').innerText = emojiResult;
+    }
+
+    // Post Scheduler
+    function generateSchedule() {
+      const postDetails = document.getElementById('schedulerText').value.trim();
+      if (!postDetails) return alert('Please enter your post details');
+      const schedule = `Post scheduled: "${postDetails}" at ${new Date().toLocaleString()}`;
+      document.getElementById('scheduleResult').innerText = schedule;
     }
   </script>
 </body>
