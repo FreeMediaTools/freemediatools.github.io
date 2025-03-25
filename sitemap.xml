@@ -2,57 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Page -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>1.0</priority>
   </url>
   <!-- Character Counter Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/character-counter</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/character-counter</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Hashtag Generator Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/hashtag-generator</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/hashtag-generator</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Instagram Caption Generator Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/instagram-caption-generator</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/instagram-caption-generator</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Bio Generator Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/bio-generator</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/bio-generator</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Emoji Suggestion Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/emoji-suggestion-tool</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/emoji-suggestion-tool</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Post Scheduler Tool -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/post-scheduler</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/post-scheduler</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- Advertise Here Page -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/advertise-here</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/advertise-here</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.6</priority>
   </url>
   <!-- Privacy Policy -->
   <url>
-    <loc>https://freemediatools.github.io/social-media-tools/privacy-policy</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://freemediatools.github.io/privacy-policy</loc>
+    <lastmod>2025-03-25</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>
-
