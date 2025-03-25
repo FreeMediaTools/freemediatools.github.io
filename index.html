@@ -3,153 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Video & Audio Tools</title>
+  <title>Social Media Tools - Free & Simple</title>
+  <meta name="google-adsense-account" content="ca-pub-4414189305076406">
+  <meta name="description" content="Free social media tools like character counter, hashtag generator, and more. Easy and fast!">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; background-color: #f9f9f9; }
-    .container { max-width: 800px; margin: auto; padding: 20px; }
-    button { margin: 10px; padding: 10px 20px; cursor: pointer; background-color: #3498db; color: white; border: none; border-radius: 5px; }
-    button:hover { background-color: #2980b9; }
-    .tool { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    textarea, input[type="number"] { width: 90%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    video { margin-top: 10px; }
-    footer { background-color: #222; color: #fff; padding: 20px 0; margin-top: 30px; }
-    footer a { color: #ccc; margin: 0 10px; text-decoration: none; }
-  </style>
 
-  <!-- AdSense Script -->
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://pagead2.googlesyndication.com; object-src 'none';">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4414189305076406"
-     crossorigin="anonymous"></script>
+  <!-- Google AdSense Script (Include only once) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4414189305076406" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <header>
-    <h1>Free Video & Audio Tools</h1>
-    <p>Your one-stop solution for video and audio editing tools.</p>
+    <h1>Social Media Tools</h1>
+    <p>Free online tools to boost your social media posts!</p>
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <!-- Example Google Ad Unit -->
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-client="ca-pub-4414189305076406"
-         data-ad-slot="1234567890" 
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <section class="tools">
-      <div class="tool">
-        <h2>AI Subtitles Generator</h2>
-        <p>Add subtitles to your videos automatically.</p>
-        <input type="file" id="audioInput" accept="audio/*"><br>
-        <button onclick="generateSubtitles()">Generate Subtitles</button>
-        <p id="subtitles"></p>
-      </div>
-
-      <div class="tool">
-        <h2>Video Cutter & Trimmer</h2>
-        <p>Edit and trim your videos online for free.</p>
-        <input type="file" id="videoInput" accept="video/*"><br>
-        <video id="video" controls width="400"></video><br>
-        <label>Start Time (seconds):</label> <input type="number" id="startTime" min="0">
-        <label>End Time (seconds):</label> <input type="number" id="endTime" min="0"><br>
-        <button onclick="trimVideo()">Trim Video</button>
-      </div>
-
-      <div class="tool">
-        <h2>Text-to-Speech Reader</h2>
-        <p>Convert text into natural-sounding speech.</p>
-        <textarea id="textInput" rows="4" placeholder="Enter text here..."></textarea><br>
-        <button onclick="speakText()">Read Aloud</button>
-      </div>
-
-      <div class="tool">
-        <h2>Noise Remover</h2>
-        <p>Remove background noise from your recordings.</p>
-        <input type="file" id="audioNoiseInput" accept="audio/*"><br>
-        <button onclick="removeNoise()">Remove Noise</button>
-      </div>
+    <!-- Character Counter Tool Section -->
+    <section class="tool">
+      <h2>Character Counter</h2>
+      <textarea id="charText" placeholder="Type your text..."></textarea>
+      <p>Characters: <span id="charCount">0</span></p>
+      <button onclick="countChars()">Count Characters</button>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </section>
 
-    <!-- Another Ad Placement (Optional) -->
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-client="ca-pub-4414189305076406"
-         data-ad-slot="1234567891"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!-- Hashtag Generator Section -->
+    <section class="tool">
+      <h2>Hashtag Generator</h2>
+      <input type="text" id="hashtagKeyword" placeholder="Enter a keyword">
+      <button onclick="generateHashtags()">Generate Hashtags</button>
+      <p id="hashtagsResult"></p>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
 
-  </div>
+    <!-- Caption Generator Section -->
+    <section class="tool">
+      <h2>Instagram Caption Generator</h2>
+      <input type="text" id="captionKeyword" placeholder="Enter a keyword">
+      <button onclick="generateCaption()">Generate Caption</button>
+      <p id="captionResult"></p>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+
+    <!-- Bio Generator Section -->
+    <section class="tool">
+      <h2>Bio Generator</h2>
+      <input type="text" id="bioKeyword" placeholder="Enter a keyword">
+      <button onclick="generateBio()">Generate Bio</button>
+      <p id="bioResult"></p>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+
+    <!-- Emoji Suggestion Tool Section -->
+    <section class="tool">
+      <h2>Emoji Suggestion Tool</h2>
+      <input type="text" id="emojiKeyword" placeholder="Enter a keyword for emojis">
+      <button onclick="generateEmojis()">Generate Emojis</button>
+      <p id="emojiResult"></p>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+
+    <!-- Post Scheduler Section -->
+    <section class="tool">
+      <h2>Post Scheduler</h2>
+      <textarea id="schedulerText" placeholder="Enter your post details"></textarea>
+      <button onclick="generateSchedule()">Generate Post Schedule</button>
+      <p id="scheduleResult"></p>
+      
+      <!-- Ad for this section -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="1532288103"
+           data-ad-format="fluid"
+           data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+
+    <!-- Google AdSense Ad Section (this can be placed anywhere you want another ad) -->
+    <section class="tool">
+      <h2>Advertise Here</h2>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4414189305076406"
+           data-ad-slot="5728012977"
+           data-ad-format="auto"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+
+  </main>
 
   <footer>
-    <p>&copy; 2025 Free Media Tools | All Rights Reserved</p>
-    <nav>
-      <a href="privacy-policy.html">Privacy Policy</a> |
-      <a href="terms-of-service.html">Terms of Service</a>
-    </nav>
+    <p>&copy; 2025 Social Media Tools | <a href="privacy-policy.html">Privacy Policy</a></p>
   </footer>
 
-  <!-- JavaScript Functionalities -->
   <script>
-    // Text-to-Speech
-    function speakText() {
-      const text = document.getElementById("textInput").value;
-      if (text.trim() === "") return alert("Please enter text to read.");
-      const speech = new SpeechSynthesisUtterance(text);
-      window.speechSynthesis.speak(speech);
-    }
-
-    // Placeholder for AI Subtitles Generator
-    function generateSubtitles() {
-      const file = document.getElementById("audioInput").files[0];
-      if (file) {
-        document.getElementById("subtitles").innerText = "Subtitles will be generated here (feature in development).";
-      } else {
-        alert("Please upload an audio file.");
-      }
-    }
-
-    // Video Trimming (Simulated)
-    function trimVideo() {
-      const video = document.getElementById("video");
-      const startTime = parseFloat(document.getElementById("startTime").value);
-      const endTime = parseFloat(document.getElementById("endTime").value);
-      const file = document.getElementById("videoInput").files[0];
-
-      if (file) {
-        const url = URL.createObjectURL(file);
-        video.src = url;
-        video.currentTime = startTime;
-
-        video.addEventListener("timeupdate", function () {
-          if (video.currentTime >= endTime) {
-            video.pause();
-          }
-        });
-      } else {
-        alert("Please upload a video file.");
-      }
-    }
-
-    // Noise Removal (Placeholder)
-    function removeNoise() {
-      const file = document.getElementById("audioNoiseInput").files[0];
-      if (file) {
-        alert("Noise removal feature is under development.");
-      } else {
-        alert("Please upload an audio file.");
-      }
-    }
+    // JavaScript functions for generating content
+    // ... (same as before)
   </script>
-
 </body>
 </html>
