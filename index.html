@@ -32,7 +32,7 @@
       <p id="hashtagsResult"></p>
     </section>
 
-    <!-- Caption Generator -->
+    <!-- Instagram Caption Generator -->
     <section class="tool">
       <h2>Instagram Caption Generator</h2>
       <input type="text" id="captionKeyword" placeholder="Enter a keyword">
@@ -121,12 +121,20 @@
     function generateEmojis() {
       const keyword = document.getElementById('emojiKeyword').value.trim();
       if (!keyword) return alert('Please enter a keyword');
+
       const emojis = {
-        love: "❤️💖💕",
-        happy: "😊😁😂",
-        sad: "😢😭💔",
-        fun: "🎉🎊🎈"
+        love: "❤️💖💕💘💝",
+        happy: "😊😁😂😃😄",
+        sad: "😢😭💔😞😔",
+        fun: "🎉🎊🎈🥳🎉",
+        animals: "🐶🐱🐭🐹🐰🐻🐼🐨🐯🐸🐒",
+        food: "🍏🍎🍉🍓🍇🍔🍟🍕🌮🍦",
+        travel: "✈️🚗🚢🚆🌍🏖️",
+        work: "💼📈📊📅🗂️📝",
+        party: "🍾🎂🎁🎉🎊🍸",
+        sports: "⚽🏀🏈🎾🏅🥇"
       };
+
       const emojiResult = emojis[keyword.toLowerCase()] || "No emojis found for this keyword!";
       document.getElementById('emojiResult').innerText = emojiResult;
     }
