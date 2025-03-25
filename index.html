@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Media Tools - Free & Simple</title>
   <meta name="google-adsense-account" content="ca-pub-4414189305076406">
-  <meta name="description" content="Free social media tools like character counter, hashtag generator, and more. Easy and fast!">
+  <meta name="description"
+    content="Free social media tools like character counter, hashtag generator, and more. Easy and fast!">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Google AdSense Script -->
@@ -22,8 +23,53 @@
 
   <main class="container">
 
-    <!-- Character Counter -->
+    <!-- Character Counter Tool Section -->
     <section class="tool">
       <h2>Character Counter</h2>
       <textarea id="charText" placeholder="Type your text..."></textarea>
-      <p>Characters: <span id="charCount">
+      <p>Characters: <span id="charCount">0</span></p>
+      <button onclick="countChars()">Count Characters</button>
+    </section>
+
+    <!-- Hashtag Generator Section -->
+    <section class="tool">
+      <h2>Hashtag Generator</h2>
+      <input type="text" id="hashtagKeyword" placeholder="Enter a keyword">
+      <button onclick="generateHashtags()">Generate Hashtags</button>
+      <p id="hashtagsResult"></p>
+    </section>
+
+    <!-- Caption Generator Section -->
+    <section class="tool">
+      <h2>Instagram Caption Generator</h2>
+      <input type="text" id="captionKeyword" placeholder="Enter a keyword">
+      <button onclick="generateCaption()">Generate Caption</button>
+      <p id="captionResult"></p>
+    </section>
+
+    <!-- Bio Generator Section -->
+    <section class="tool">
+      <h2>Bio Generator</h2>
+      <input type="text" id="bioKeyword" placeholder="Enter a keyword">
+      <button onclick="generateBio()">Generate Bio</button>
+      <p id="bioResult"></p>
+    </section>
+
+    <!-- Emoji Suggestion Tool Section -->
+    <section class="tool">
+      <h2>Emoji Suggestion Tool</h2>
+      <input type="text" id="emojiKeyword" placeholder="Enter a keyword for emojis">
+      <button onclick="generateEmojis()">Generate Emojis</button>
+      <p id="emojiResult"></p>
+    </section>
+
+    <!-- Post Scheduler Section -->
+    <section class="tool">
+      <h2>Post Scheduler</h2>
+      <textarea id="schedulerText" placeholder="Enter your post details"></textarea>
+      <button onclick="generateSchedule()">Generate Post Schedule</button>
+      <p id="scheduleResult"></p>
+    </section>
+
+    <!-- Advertise Section -->
+    <section
