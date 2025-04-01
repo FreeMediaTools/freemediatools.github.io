@@ -28,18 +28,60 @@
     "publisher": {
       "@type": "Organization",
       "name": "FreeMediaTools"
-    },
-    "mainEntity": {
-      "@type": "WebPage",
-      "name": "SEO Optimization",
-      "url": "https://freemediatools.github.io/seo.html",
-      "description": "SEO tips and structured data to improve search visibility."
     }
   }
   </script>
 
-  <!-- Sitemap Reference -->
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://freemediatools.github.io/sitemap.xml">
+  <!-- Software Application Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FreeMediaTools",
+    "operatingSystem": "Web",
+    "applicationCategory": "Utility",
+    "description": "A collection of free tools to help with social media marketing, including character counters, hashtag generators, and caption creators.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is FreeMediaTools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FreeMediaTools is a website offering free online tools for social media marketing, including hashtag generators, caption creators, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these tools free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! All tools on FreeMediaTools are 100% free to use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to sign up to use the tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, you can use all the tools without signing up."
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -48,15 +90,6 @@
     <h1>SEO Optimization for Social Media</h1>
     <p>Learn how to boost your online presence with smart SEO strategies.</p>
   </header>
-
-  <!-- Navigation for Internal Linking -->
-  <nav>
-    <ul>
-      <li><a href="https://freemediatools.github.io/">Home</a></li>
-      <li><a href="https://freemediatools.github.io/seo.html">SEO Guide</a></li>
-      <li><a href="https://freemediatools.github.io/tools.html">Tools</a></li>
-    </ul>
-  </nav>
 
   <main>
     <section>
@@ -67,6 +100,18 @@
     <section>
       <h2>More SEO Tips</h2>
       <p>Make sure to add a sitemap, get backlinks, and write useful content.</p>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is FreeMediaTools?</h3>
+      <p>FreeMediaTools is a collection of free online tools to help with social media marketing.</p>
+
+      <h3>Are these tools free to use?</h3>
+      <p>Yes! All tools are completely free and require no sign-up.</p>
+
+      <h3>Do I need to sign up?</h3>
+      <p>No, you can use all the tools without creating an account.</p>
     </section>
   </main>
 
