@@ -32,7 +32,7 @@
   }
   </script>
 
-  <!-- Software Application Schema -->
+  <!-- Software Application Schema (with aggregateRating) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,6 +45,11 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "120"
     }
   }
   </script>
@@ -120,3 +125,4 @@
   </footer>
 </body>
 </html>
+
