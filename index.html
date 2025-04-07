@@ -8,11 +8,9 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://freemediatools.github.io/seo.html">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4414189305076406"
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4414189305076406"
      crossorigin="anonymous"></script>
-  <!-- Link to structured-data.html -->
-<link rel="stylesheet" href="structured-data.html">
-
+  <link rel="stylesheet" href="structured-data.html">
 </head>
 
 <body>
@@ -21,37 +19,12 @@
     <p>Free online tools to boost your social media posts!</p>
   </header>
 
-  <!-- ✅ SEO Text Content Block -->
-  <section id="tool-descriptions" style="margin: 2rem; font-family: sans-serif;">
-    <h2>About Our Free Social Media Tools</h2>
-    <p>Welcome to FreeMediaTools — a one-stop destination for free, easy-to-use tools to enhance your social media game. Whether you’re an influencer, marketer, or just someone who loves social media, these tools are here to help you save time and improve engagement.</p>
-
-    <h3>Character Counter</h3>
-    <p>This tool counts how many characters your message contains. Ideal for Twitter, Instagram bios, or any platform with character limits.</p>
-
-    <h3>Hashtag Generator</h3>
-    <p>Enter a keyword to get a list of hashtags that can boost visibility on platforms like Instagram, TikTok, and Twitter. Improve your SEO and reach new audiences easily.</p>
-
-    <h3>Instagram Caption Generator</h3>
-    <p>Need help coming up with captions? Enter a theme or keyword and generate unique and catchy captions for your posts.</p>
-
-    <h3>Bio Generator</h3>
-    <p>Create creative and relevant bios for your social profiles. Just type in a keyword and get inspiration fast.</p>
-
-    <h3>Emoji Suggestion Tool</h3>
-    <p>Enhance your messages with emojis. Enter a word like “happy” or “food” and instantly get a group of matching emojis.</p>
-
-    <h3>Post Scheduler</h3>
-    <p>Use this to plan your posts. Write your message and see a quick simulated schedule for when it can go live.</p>
-
-    <p>All tools are available for free, with no sign-up required. Bookmark this page and keep your content flowing!</p>
-  </section>
-
   <main class="container">
 
     <!-- Character Counter -->
     <section class="tool">
       <h2>Character Counter</h2>
+      <p>This tool counts how many characters your message contains. Ideal for Twitter, Instagram bios, or any platform with character limits.</p>
       <textarea id="charText" placeholder="Type your text..."></textarea>
       <p>Characters: <span id="charCount">0</span></p>
       <button onclick="countChars()">Count Characters</button>
@@ -60,6 +33,7 @@
     <!-- Hashtag Generator -->
     <section class="tool">
       <h2>Hashtag Generator</h2>
+      <p>Enter a keyword to get a list of hashtags that can boost visibility on platforms like Instagram, TikTok, and Twitter. Improve your SEO and reach new audiences easily.</p>
       <input type="text" id="hashtagKeyword" placeholder="Enter a keyword">
       <button onclick="generateHashtags()">Generate Hashtags</button>
       <p id="hashtagsResult"></p>
@@ -68,6 +42,7 @@
     <!-- Instagram Caption Generator -->
     <section class="tool">
       <h2>Instagram Caption Generator</h2>
+      <p>Need help coming up with captions? Enter a theme or keyword and generate unique and catchy captions for your posts.</p>
       <input type="text" id="captionKeyword" placeholder="Enter a keyword">
       <button onclick="generateCaption()">Generate Caption</button>
       <p id="captionResult"></p>
@@ -76,6 +51,7 @@
     <!-- Bio Generator -->
     <section class="tool">
       <h2>Bio Generator</h2>
+      <p>Create creative and relevant bios for your social profiles. Just type in a keyword and get inspiration fast.</p>
       <input type="text" id="bioKeyword" placeholder="Enter a keyword">
       <button onclick="generateBio()">Generate Bio</button>
       <p id="bioResult"></p>
@@ -84,6 +60,7 @@
     <!-- Emoji Suggestion Tool -->
     <section class="tool">
       <h2>Emoji Suggestion Tool</h2>
+      <p>Enhance your messages with emojis. Enter a word like “happy” or “food” and instantly get a group of matching emojis.</p>
       <input type="text" id="emojiKeyword" placeholder="Enter a keyword for emojis">
       <button onclick="generateEmojis()">Generate Emojis</button>
       <p id="emojiResult"></p>
@@ -92,6 +69,7 @@
     <!-- Post Scheduler -->
     <section class="tool">
       <h2>Post Scheduler</h2>
+      <p>Use this to plan your posts. Write your message and see a quick simulated schedule for when it can go live.</p>
       <textarea id="schedulerText" placeholder="Enter your post details"></textarea>
       <button onclick="generateSchedule()">Generate Post Schedule</button>
       <p id="scheduleResult"></p>
@@ -182,3 +160,4 @@
   </script>
 </body>
 </html>
+
