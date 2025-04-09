@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://freemediatools.github.io/social-media-tools/sitemap.xml
 
