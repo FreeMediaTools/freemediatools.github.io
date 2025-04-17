@@ -2,78 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FreeMediaTools.io</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f4f8;
-      color: #333;
-    }
-    header {
-      background: #4a90e2;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .logo {
-      font-size: 2rem;
-      font-weight: 600;
-    }
-    .tagline {
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .tool-card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .tool-card:hover {
-      transform: scale(1.03);
-    }
-    .tool-card a {
-      text-decoration: none;
-      color: #4a90e2;
-      font-weight: 600;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Social Media Tools – Hashtag & Caption Generator</title>
+  <meta name="description" content="Free social media tools to help with your character count, hashtags, captions, and more. Boost your social media presence today." />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://freemediatools.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Social Media Tools – Hashtag & Caption Generator" />
+  <meta property="og:description" content="Free tools to boost your social media game with hashtags, captions, bios, and more." />
+  <meta property="og:url" content="https://freemediatools.github.io/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free Social Media Tools – Hashtag & Caption Generator" />
+  <meta name="twitter:description" content="Use free social media tools to generate hashtags, captions, bios and more!" />
+
+  <!-- Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4414189305076406" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
-    <div class="logo">FreeMediaTools.io</div>
-    <div class="tagline">Fast, free, no-login tools for creators</div>
+    <h1>Social Media Tools</h1>
+    <p>Free online tools to boost your social media posts!</p>
   </header>
 
   <main class="container">
-    <div class="tool-card">
-      <a href="tools/audio-trimmer.html">🎵 Audio Trimmer</a>
-      <p>Trim audio files instantly online.</p>
-    </div>
-    <div class="tool-card">
-      <a href="tools/image-compressor.html">📷 Image Compressor</a>
-      <p>Compress images without quality loss.</p>
-    </div>
-    <div class="tool-card">
-      <a href="tools/video-cutter.html">🎬 Video Cutter</a>
-      <p>Cut videos directly from your browser.</p>
-    </div>
-    <!-- Add more tools here as needed -->
+
+    <!-- Character Counter -->
+    <section class="tool">
+      <h2>Character Counter</h2>
+      <p>This tool counts how many characters your message contains. Ideal for Twitter, Instagram bios, or any platform with character limits.</p>
+      <textarea id="charText" placeholder="Type your text..."></textarea>
+      <p>Characters: <span id="charCount">0</span></p>
+      <button onclick="countChars()">Count Characters</button>
+    </section>
+
+    <!-- Hashtag Generator -->
+    <section class="tool">
+      <h2>Hashtag Generator</h2>
+      <p>Enter a keyword to get a list of hashtags that can boost visibility on platforms like Instagram, TikTok, and Twitter.</p>
+      <input type="text" id="hashtagKeyword" placeholder="Enter a keyword" />
+      <button onclick="generateHashtags()">Generate Hashtags</button>
+      <p id="hashtagsResult"></p>
+    </section>
+
+    <!-- Instagram Caption Generator -->
+    <section class="tool">
+      <h2>Instagram Caption Generator</h2>
+      <p>Enter a theme or keyword and generate catchy captions for your posts.</p>
+      <input type="text" id="captionKeyword" placeholder="Enter a keyword" />
+      <button onclick="generateCaption()">Generate Caption</button>
+      <p id="captionResult"></p>
+    </section>
+
+    <!-- Bio Generator -->
+    <section class="tool">
+      <h2>Bio Generator</h2>
+      <p>Create creative bios for your social profiles. Type a keyword to get ideas.</p>
+      <input type="text" id="bioKeyword" placeholder="Enter a keyword" />
+      <button onclick="generateBio()">Generate Bio</button>
+      <p id="bioResult"></p>
+    </section>
+
+    <!-- Emoji Suggestion Tool -->
+    <section class="tool">
+      <h2>Emoji Suggestion Tool</h2>
+      <p>Enter a word like “happy” or “food” and get matching emojis.</p>
+      <input type="text" id="emojiKeyword" placeholder="Enter a keyword for emojis" />
+      <button onclick="generateEmojis()">Generate Emojis</button>
+      <p id="emojiResult"></p>
+    </section>
+
+    <!-- Post Scheduler -->
+    <section class="tool">
+      <h2>Post Scheduler</h2>
+      <p>Write your message and see a simulated post schedule.</p>
+      <textarea id="schedulerText" placeholder="Enter your post details"></textarea>
+      <button onclick="generateSchedule()">Generate Post Schedule</button>
+      <p id="scheduleResult"></p>
+    </section>
+
+    <!-- More Tools -->
+    <section class="tool">
+      <h2>More Tools Coming Soon</h2>
+      <p>Stay tuned for more features!</p>
+    </section>
+
   </main>
+
+  <footer>
+    <p>&copy; 2025 Social Media Tools | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    function countChars() {
+      const text = document.getElementById('charText').value;
+      document.getElementById('charCount').innerText = text.length;
+    }
+
+    function generateHashtags() {
+      const keyword = document.getElementById('hashtagKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const hashtags = `#${keyword} #${keyword}Life #${keyword}Goals #${keyword}Vibes #${keyword}Lovers`;
+      document.getElementById('hashtagsResult').innerText = hashtags;
+    }
+
+    function generateCaption() {
+      const keyword = document.getElementById('captionKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const captions = [
+        `Feeling #${keyword} today!`,
+        `Living my best #${keyword} life!`,
+        `Another day, another #${keyword} vibe.`,
+        `Just a little #${keyword} for your feed!`
+      ];
+      document.getElementById('captionResult').innerText = captions[Math.floor(Math.random() * captions.length)];
+    }
+
+    function generateBio() {
+      const keyword = document.getElementById('bioKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const bios = [
+        `I'm a proud ${keyword} lover!`,
+        `${keyword} enthusiast sharing my passion with the world.`,
+        `Living life with a big love for ${keyword}.`
+      ];
+      document.getElementById('bioResult').innerText = bios[Math.floor(Math.random() * bios.length)];
+    }
+
+    function generateEmojis() {
+      const keyword = document.getElementById('emojiKeyword').value.trim();
+      if (!keyword) return alert('Please enter a keyword');
+      const emojis = {
+        love: "❤️💖💕💘💝",
+        happy: "😊😁😂😃😄",
+        sad: "😢😭💔😞😔",
+        fun: "🎉🎊🎈🥳🎉",
+        animals: "🐶🐱🐭🐹🐰🐻🐼🐨🐯🐸🐒",
+        food: "🍏🍎🍉🍓🍇🍔🍟🍕🌮🍦",
+        travel: "✈️🚗🚢🚆🌍🏖️",
+        work: "💼📈📊📅🗂️📝",
+        party: "🍾🎂🎁🎉🎊🍸",
+        sports: "⚽🏀🏈🎾🏅🥇"
+      };
+      document.getElementById('emojiResult').innerText = emojis[keyword.toLowerCase()] || "No emojis found for this keyword!";
+    }
+
+    function generateSchedule() {
+      const postDetails = document.getElementById('schedulerText').value.trim();
+      if (!postDetails) return alert('Please enter your post details');
+      const schedule = `Post scheduled: "${postDetails}" at ${new Date().toLocaleString()}`;
+      document.getElementById('scheduleResult').innerText = schedule;
+    }
+  </script>
 </body>
 </html>
-
-
